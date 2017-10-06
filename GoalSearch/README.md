@@ -2,6 +2,7 @@
 The aim of this part of the Project is to draw a comparison between 6 different types of Goal Search Algorithms namely
 * Breadth-First Search (BFS)
 * Depth-First Search (DFS)
+* Iterative-Deepening Search (IDS)
 * Greedy-Best-First Search (GBFS)
 * A Star Heuristic Search (A Star)
 * Iterative-Deepening-A–Star Heuristic Search (IDA Star)
@@ -28,6 +29,14 @@ A **Game State** refers to any vaild state of the grid where the numbers are in 
 |<table> <tr><th>**1**</th><th>**3**</th><th>**4**</th></tr><tr><td>**7**</td><td>**6**</td><td>**2**</td></tr><tr><th>**8**</th><th> </th><th>**5**</th> </table>|<table> <tr><th>**2**</th><th>**8**</th><th>**1**</th></tr><tr><td> </td><td>**4**</td><td>**3**</td></tr><tr><th>**7**</th><th>**6**</th><th>**2**</th> </table>|<table> <tr><th>**2**</th><th>**8**</th><th>**1**</th></tr><tr><td>**4**</td><td> </td><td>**3**</td></tr><tr><th>**6**</th><th>**5**</th><th>**7**</th> </table>| 
 
 # Goal Search Algorithms
+Let us look at each algorithm in more detail and understand the differences in their approach.
+
+## 1. Breadth-First Search (BFS)
+## 2. Depth-First Search (DFS)
+## 3. Iterative-Deepening Search (IDS)
+## 3. Greedy-Best-First Search (GBFS)
+## 4. A Star Heuristic Search (A Star)
+## 5. Iterative-Deepening-A–Star Heuristic Search (IDA Star)
 
 # Comparison
 
