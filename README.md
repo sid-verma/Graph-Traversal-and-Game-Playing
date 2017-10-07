@@ -67,6 +67,7 @@ The following table compares attributes of each graph traversal algorithm.
 * http://www.d.umn.edu/~jrichar4/8puz.html
 
 # Game Playing
+
 ## Problem Statement
 A two-player game can be thought of as a tree where the root node is the current state of the game with the current player has made his move. The children of this node (1st level) represent all the possible states of the game after the opponent has made his move. The children of the 1st level nodes (2nd level) represent the moved played back again by the current player and so on. The leaves represent the final outcome of the game i.e. either of the two players wins. Given a tree where each node is represented by a value corresponding to a move by a particular player, we have to find out the best path for a particular player to win the game. 
 
