@@ -76,7 +76,7 @@ We employ a minimax game playing strategy where we
 ## Alpha-Beta Pruning:
 This method is applied where we want to reduce the no. of nodes traversed in a tree, and save a lot of running time when it comes to making decisions for players (of a game). To do this, we first use the utility values of the leaf nodes, and work our way upwards to find out the minimax values of each node of the tree. Based on that we do two tests:
 
-### For a Min state node:
+### Intuition for a min-state node:
 
 * **Case1:** If the child vertices are lesser than the minimax (Beta) value of the node AND the child vertices are greater than the current Max value of the super-ancestor node (parent of the parent node), then we copy the value of the child onto the parent.
 
