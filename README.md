@@ -68,7 +68,7 @@ The following table compares attributes of each graph traversal algorithm.
 
 # Game Playing
 ## Problem Statement
-
+A two-player game can be thought of as a tree where the root node is the current state of the game with the current player has made his move. The children of this node (1st level) represent all the possible states of the game after the opponent has made his move. The children of the 1st level nodes (2nd level) represent the moved played back again by the current player and so on. The leaves represent the final outcome of the game i.e. either of the two players wins. Given a tree where each node is represented by a value corresponding to a move by a particular player, we have to find out the best path for a particular player to win the game. 
 
 ## Minimax Strategy:
 We employ a minimax game playing strategy where we
@@ -77,10 +77,10 @@ We employ a minimax game playing strategy where we
 This method is applied where we want to reduce the no. of nodes traversed in a tree, and save a lot of running time when it comes to making decisions for players (of a game). To do this, we first use the utility values of the leaf nodes, and work our way upwards to find out the minimax values of each node of the tree. Based on that we do two tests:
 
 ### For a Min state node:
-#### Case1: If the child vertices are lesser than the minimax (Beta) value of the node AND the child vertices are greater than the current Max value of the super-ancestor node (parent of the parent node), then we copy the value of the child onto the parent.
+* **Case1:** If the child vertices are lesser than the minimax (Beta) value of the node AND the child vertices are greater than the current Max value of the super-ancestor node (parent of the parent node), then we copy the value of the child onto the parent.
 
-#### Case2: If the child vertices are greater than the minimax value of the node, then we move on to the next child vertex
+* **Case2:** If the child vertices are greater than the minimax value of the node, then we move on to the next child vertex
 
-#### Case3: If the child vertices are greater than the minimax value of the parent node, BUT they are lesser than the Max value of the super-ancestor; It means that no other child vertex can be preferred to be copied onto the parent. Hence we PRUNE the other nodes, and move on to another sub-tree. The same logic can be conversely applied for a Max state node having a minimax value(Alpha).
+* **Case3:** If the child vertices are greater than the minimax value of the parent node, but they are lesser than the Max value of the super-ancestor; It means that no other child vertex can be preferred to be copied onto the parent. Hence we **prune** the other nodes, and move on to another sub-tree. The same logic can be conversely applied for a Max state node having a minimax value(Alpha).
 
 In this way we, we are able to ignore a lot of unnecessary nodes and traverse the entire tree in a faster way to get the (Alpha, Beta) values of the root node. Then we can backtrack our path based on the same values which got us to the root node, and get the optimal game playing decision sets for a particular side.
