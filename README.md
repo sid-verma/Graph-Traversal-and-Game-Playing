@@ -72,7 +72,7 @@ The following table compares attributes of each graph traversal algorithm.
 A two-player game can be thought of as a tree where the root node is the current state of the game with the current player has made his move. The children of this node (1st level) represent all the possible states of the game after the opponent has made his move. The children of the 1st level nodes (2nd level) represent the moved played back again by the current player and so on. The leaves represent the final outcome of the game i.e. either of the two players wins. Given a tree where each node is represented by a value corresponding to a move by a particular player, we have to find out the best path for a particular player to win the game. 
 
 ## Minimax Strategy:
-We employ a minimax game playing strategy where we
+We employ a minimax game playing strategy where if we want the current player to win, we choose start with the root node, and more towards the node with the lowest heurstic value in the opponent-move layer, so as to minimize the impact of the opponent's move. When it is our player's turn, we choose the node with the highest heuristic value so as to maximize our players decision. Here we assume that a high heuristic value represents a greater likelihood of a player to win the game.
 
 ## Alpha-Beta Pruning:
 This method is applied where we want to reduce the no. of nodes traversed in a tree, and save a lot of running time when it comes to making decisions for players (of a game). To do this, we first use the utility values of the leaf nodes, and work our way upwards to find out the minimax values of each node of the tree. Based on that we do two tests:
