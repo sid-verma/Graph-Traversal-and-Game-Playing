@@ -1,4 +1,4 @@
-# Graph-Traversal-and-Game-Playing
+# Graph Traversal and Game Playing
 The language used for implementation was Python 2.7.
 
 # Graph Traversal
