@@ -28,7 +28,7 @@ A **Game State** refers to any vaild state of the grid where the numbers are in 
 |--|--|--|
 |<table> <tr><th>**1**</th><th>**3**</th><th>**4**</th></tr><tr><td>**7**</td><td>**6**</td><td>**2**</td></tr><tr><th>**8**</th><th> </th><th>**5**</th> </table>|<table> <tr><th>**2**</th><th>**8**</th><th>**1**</th></tr><tr><td> </td><td>**4**</td><td>**3**</td></tr><tr><th>**7**</th><th>**6**</th><th>**2**</th> </table>|<table> <tr><th>**2**</th><th>**8**</th><th>**1**</th></tr><tr><td>**4**</td><td> </td><td>**3**</td></tr><tr><th>**6**</th><th>**5**</th><th>**7**</th> </table>| 
 
-# Goal Search Algorithms
+# Graph Traversal Algorithms
 Let us look at each algorithm in more detail and understand the differences in their approach. With respect to the 8-Puzzle search problem, each game state corresponds to a node in a tree constituting of several game states. The root of this tree is the initial state and the leaf is the solved state. Each child of a particular node
 
 ## 1. Breadth-First Search (BFS)
@@ -54,6 +54,7 @@ The A \* search method also uses a heursitic function but with a modification. A
 This is similar to A\* but is applied upto a threshold level K (similar to IDFS). It does not use dynamic programming, hence many nodes are searched over again during each iteration.
 
 # Comparison
+The following table compares attributes of each graph traversal algorithm.
 
 # References
 * http://www.d.umn.edu/~jrichar4/8puz.html
