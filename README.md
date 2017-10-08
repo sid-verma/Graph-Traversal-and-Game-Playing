@@ -64,6 +64,7 @@ The following table compares attributes of each graph traversal algorithm.
 
 ## References
 * http://www.d.umn.edu/~jrichar4/8puz.html
+* https://commons.wikimedia.org
 
 # Game Playing
 
