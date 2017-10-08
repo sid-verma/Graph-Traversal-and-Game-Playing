@@ -59,9 +59,6 @@ The A \* search method also uses a heursitic function but with a modification. A
 ### 6. Iterative-Deepening-A–Star Heuristic Search (IDA \*)
 This is similar to A\* but is applied upto a threshold level K (similar to IDFS). It does not use dynamic programming, hence many nodes are searched over again during each iteration.
 
-## Comparison
-The following table compares attributes of each graph traversal algorithm.
-
 ## References
 * http://www.d.umn.edu/~jrichar4/8puz.html
 * https://commons.wikimedia.org
